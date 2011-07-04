@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC4B68C013C22F2B00D10B3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4B68BF13C22F2B00D10B3F /* Cocoa.framework */; };
+		AC4B68CA13C22F2B00D10B3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68C813C22F2B00D10B3F /* InfoPlist.strings */; };
+		AC4B68CD13C22F2B00D10B3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4B68CC13C22F2B00D10B3F /* main.m */; };
+		AC4B68D013C22F2B00D10B3F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68CE13C22F2B00D10B3F /* Credits.rtf */; };
+		AC4B68D313C22F2B00D10B3F /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4B68D213C22F2B00D10B3F /* MyDocument.m */; };
+		AC4B68D613C22F2B00D10B3F /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68D413C22F2B00D10B3F /* MyDocument.xib */; };
+		AC4B68D913C22F2B00D10B3F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68D713C22F2B00D10B3F /* MainMenu.xib */; };
+		AC4B68DC13C22F2B00D10B3F /* MyDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC4B68DA13C22F2B00D10B3F /* MyDocument.xcdatamodeld */; };
+		AC4B68E313C22F2B00D10B3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4B68BF13C22F2B00D10B3F /* Cocoa.framework */; };
+		AC4B68EB13C22F2B00D10B3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68E913C22F2B00D10B3F /* InfoPlist.strings */; };
+		AC4B68EE13C22F2B00D10B3F /* MacPuf2011Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68ED13C22F2B00D10B3F /* MacPuf2011Tests.h */; };
+		AC4B68F013C22F2B00D10B3F /* MacPuf2011Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4B68EF13C22F2B00D10B3F /* MacPuf2011Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC4B68E413C22F2B00D10B3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC4B68B213C22F2B00D10B3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC4B68BA13C22F2B00D10B3F;
+			remoteInfo = MacPuf2011;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC4B68BB13C22F2B00D10B3F /* MacPuf2011.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacPuf2011.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4B68BF13C22F2B00D10B3F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AC4B68C213C22F2B00D10B3F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AC4B68C313C22F2B00D10B3F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AC4B68C413C22F2B00D10B3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AC4B68C713C22F2B00D10B3F /* MacPuf2011-Info.plist */ = {isa = PBXFileReference; path = "MacPuf2011-Info.plist"; sourceTree = "<group>"; };
+		AC4B68C913C22F2B00D10B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC4B68CB13C22F2B00D10B3F /* MacPuf2011-Prefix.pch */ = {isa = PBXFileReference; path = "MacPuf2011-Prefix.pch"; sourceTree = "<group>"; };
+		AC4B68CC13C22F2B00D10B3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC4B68CF13C22F2B00D10B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AC4B68D113C22F2B00D10B3F /* MyDocument.h */ = {isa = PBXFileReference; path = MyDocument.h; sourceTree = "<group>"; };
+		AC4B68D213C22F2B00D10B3F /* MyDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
+		AC4B68D513C22F2B00D10B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyDocument.xib; sourceTree = "<group>"; };
+		AC4B68D813C22F2B00D10B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AC4B68DB13C22F2B00D10B3F /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
+		AC4B68E213C22F2B00D10B3F /* MacPuf2011Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacPuf2011Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4B68E813C22F2B00D10B3F /* MacPuf2011Tests-Info.plist */ = {isa = PBXFileReference; path = "MacPuf2011Tests-Info.plist"; sourceTree = "<group>"; };
+		AC4B68EA13C22F2B00D10B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC4B68EC13C22F2B00D10B3F /* MacPuf2011Tests-Prefix.pch */ = {isa = PBXFileReference; path = "MacPuf2011Tests-Prefix.pch"; sourceTree = "<group>"; };
+		AC4B68ED13C22F2B00D10B3F /* MacPuf2011Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacPuf2011Tests.h; sourceTree = "<group>"; };
+		AC4B68EF13C22F2B00D10B3F /* MacPuf2011Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacPuf2011Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC4B68B813C22F2B00D10B3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4B68C013C22F2B00D10B3F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4B68DE13C22F2B00D10B3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4B68E313C22F2B00D10B3F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC4B68B013C22F2B00D10B3F = {
+			isa = PBXGroup;
+			children = (
+				AC4B68C513C22F2B00D10B3F /* MacPuf2011 */,
+				AC4B68E613C22F2B00D10B3F /* MacPuf2011Tests */,
+				AC4B68BE13C22F2B00D10B3F /* Frameworks */,
+				AC4B68BC13C22F2B00D10B3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC4B68BC13C22F2B00D10B3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC4B68BB13C22F2B00D10B3F /* MacPuf2011.app */,
+				AC4B68E213C22F2B00D10B3F /* MacPuf2011Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC4B68BE13C22F2B00D10B3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC4B68BF13C22F2B00D10B3F /* Cocoa.framework */,
+				AC4B68C113C22F2B00D10B3F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC4B68C113C22F2B00D10B3F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC4B68C213C22F2B00D10B3F /* AppKit.framework */,
+				AC4B68C313C22F2B00D10B3F /* CoreData.framework */,
+				AC4B68C413C22F2B00D10B3F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AC4B68C513C22F2B00D10B3F /* MacPuf2011 */ = {
+			isa = PBXGroup;
+			children = (
+				AC4B68D113C22F2B00D10B3F /* MyDocument.h */,
+				AC4B68D213C22F2B00D10B3F /* MyDocument.m */,
+				AC4B68D413C22F2B00D10B3F /* MyDocument.xib */,
+				AC4B68D713C22F2B00D10B3F /* MainMenu.xib */,
+				AC4B68DA13C22F2B00D10B3F /* MyDocument.xcdatamodeld */,
+				AC4B68C613C22F2B00D10B3F /* Supporting Files */,
+			);
+			path = MacPuf2011;
+			sourceTree = "<group>";
+		};
+		AC4B68C613C22F2B00D10B3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC4B68C713C22F2B00D10B3F /* MacPuf2011-Info.plist */,
+				AC4B68C813C22F2B00D10B3F /* InfoPlist.strings */,
+				AC4B68CB13C22F2B00D10B3F /* MacPuf2011-Prefix.pch */,
+				AC4B68CC13C22F2B00D10B3F /* main.m */,
+				AC4B68CE13C22F2B00D10B3F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC4B68E613C22F2B00D10B3F /* MacPuf2011Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AC4B68ED13C22F2B00D10B3F /* MacPuf2011Tests.h */,
+				AC4B68EF13C22F2B00D10B3F /* MacPuf2011Tests.m */,
+				AC4B68E713C22F2B00D10B3F /* Supporting Files */,
+			);
+			path = MacPuf2011Tests;
+			sourceTree = "<group>";
+		};
+		AC4B68E713C22F2B00D10B3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC4B68E813C22F2B00D10B3F /* MacPuf2011Tests-Info.plist */,
+				AC4B68E913C22F2B00D10B3F /* InfoPlist.strings */,
+				AC4B68EC13C22F2B00D10B3F /* MacPuf2011Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC4B68BA13C22F2B00D10B3F /* MacPuf2011 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC4B68F313C22F2B00D10B3F /* Build configuration list for PBXNativeTarget "MacPuf2011" */;
+			buildPhases = (
+				AC4B68B713C22F2B00D10B3F /* Sources */,
+				AC4B68B813C22F2B00D10B3F /* Frameworks */,
+				AC4B68B913C22F2B00D10B3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacPuf2011;
+			productName = MacPuf2011;
+			productReference = AC4B68BB13C22F2B00D10B3F /* MacPuf2011.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC4B68E113C22F2B00D10B3F /* MacPuf2011Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC4B68F613C22F2B00D10B3F /* Build configuration list for PBXNativeTarget "MacPuf2011Tests" */;
+			buildPhases = (
+				AC4B68DD13C22F2B00D10B3F /* Sources */,
+				AC4B68DE13C22F2B00D10B3F /* Frameworks */,
+				AC4B68DF13C22F2B00D10B3F /* Resources */,
+				AC4B68E013C22F2B00D10B3F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC4B68E513C22F2B00D10B3F /* PBXTargetDependency */,
+			);
+			name = MacPuf2011Tests;
+			productName = MacPuf2011Tests;
+			productReference = AC4B68E213C22F2B00D10B3F /* MacPuf2011Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC4B68B213C22F2B00D10B3F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = AC4B68B513C22F2B00D10B3F /* Build configuration list for PBXProject "MacPuf2011" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AC4B68B013C22F2B00D10B3F;
+			productRefGroup = AC4B68BC13C22F2B00D10B3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC4B68BA13C22F2B00D10B3F /* MacPuf2011 */,
+				AC4B68E113C22F2B00D10B3F /* MacPuf2011Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC4B68B913C22F2B00D10B3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4B68CA13C22F2B00D10B3F /* InfoPlist.strings in Resources */,
+				AC4B68D013C22F2B00D10B3F /* Credits.rtf in Resources */,
+				AC4B68D613C22F2B00D10B3F /* MyDocument.xib in Resources */,
+				AC4B68D913C22F2B00D10B3F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4B68DF13C22F2B00D10B3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4B68EB13C22F2B00D10B3F /* InfoPlist.strings in Resources */,
+				AC4B68EE13C22F2B00D10B3F /* MacPuf2011Tests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC4B68E013C22F2B00D10B3F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC4B68B713C22F2B00D10B3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4B68CD13C22F2B00D10B3F /* main.m in Sources */,
+				AC4B68D313C22F2B00D10B3F /* MyDocument.m in Sources */,
+				AC4B68DC13C22F2B00D10B3F /* MyDocument.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4B68DD13C22F2B00D10B3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4B68F013C22F2B00D10B3F /* MacPuf2011Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC4B68E513C22F2B00D10B3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC4B68BA13C22F2B00D10B3F /* MacPuf2011 */;
+			targetProxy = AC4B68E413C22F2B00D10B3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC4B68C813C22F2B00D10B3F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC4B68C913C22F2B00D10B3F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AC4B68CE13C22F2B00D10B3F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC4B68CF13C22F2B00D10B3F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AC4B68D413C22F2B00D10B3F /* MyDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC4B68D513C22F2B00D10B3F /* en */,
+			);
+			name = MyDocument.xib;
+			sourceTree = "<group>";
+		};
+		AC4B68D713C22F2B00D10B3F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC4B68D813C22F2B00D10B3F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AC4B68E913C22F2B00D10B3F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC4B68EA13C22F2B00D10B3F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC4B68F113C22F2B00D10B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AC4B68F213C22F2B00D10B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AC4B68F413C22F2B00D10B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacPuf2011/MacPuf2011-Prefix.pch";
+				INFOPLIST_FILE = "MacPuf2011/MacPuf2011-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AC4B68F513C22F2B00D10B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacPuf2011/MacPuf2011-Prefix.pch";
+				INFOPLIST_FILE = "MacPuf2011/MacPuf2011-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AC4B68F713C22F2B00D10B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacPuf2011.app/Contents/MacOS/MacPuf2011";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacPuf2011Tests/MacPuf2011Tests-Prefix.pch";
+				INFOPLIST_FILE = "MacPuf2011Tests/MacPuf2011Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AC4B68F813C22F2B00D10B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacPuf2011.app/Contents/MacOS/MacPuf2011";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacPuf2011Tests/MacPuf2011Tests-Prefix.pch";
+				INFOPLIST_FILE = "MacPuf2011Tests/MacPuf2011Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC4B68B513C22F2B00D10B3F /* Build configuration list for PBXProject "MacPuf2011" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC4B68F113C22F2B00D10B3F /* Debug */,
+				AC4B68F213C22F2B00D10B3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC4B68F313C22F2B00D10B3F /* Build configuration list for PBXNativeTarget "MacPuf2011" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC4B68F413C22F2B00D10B3F /* Debug */,
+				AC4B68F513C22F2B00D10B3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC4B68F613C22F2B00D10B3F /* Build configuration list for PBXNativeTarget "MacPuf2011Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC4B68F713C22F2B00D10B3F /* Debug */,
+				AC4B68F813C22F2B00D10B3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC4B68DA13C22F2B00D10B3F /* MyDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC4B68DB13C22F2B00D10B3F /* MyDocument.xcdatamodel */,
+			);
+			currentVersion = AC4B68DB13C22F2B00D10B3F /* MyDocument.xcdatamodel */;
+			path = MyDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC4B68B213C22F2B00D10B3F /* Project object */;
+}
