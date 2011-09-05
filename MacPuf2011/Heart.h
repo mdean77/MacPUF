@@ -13,15 +13,15 @@
 
 
 @interface Heart : Metabolizer {
-	float		cardiacFunction;					// MacPuf variable CO			Factor 3
-	float		effectiveCardiacOutput;		// MacPuf variable COADJ	Factor 93
-	float		maximumCardiacOutput;			// MacPuf variable COMAX	Factor 27
-	float		restingCardiacOutput;			// MacPuf variable CONOM	Factor 82
+	float		cardiacFunction;					// MacPuf variable CO		Factor 3
+	float		effectiveCardiacOutput;             // MacPuf variable COADJ	Factor 93
+	float		maximumCardiacOutput;               // MacPuf variable COMAX	Factor 27
+	float		restingCardiacOutput;               // MacPuf variable CONOM	Factor 82
 	float		leftToRightShunt;					// MacPuf variable SHUNT	Factor 28
 	float		rightToLeftShunt;					// MacPuf variable FADM		Factor 5
 	float		admixtureEffect;					// MacPuf variable VADM		Factor 9
-	float		effectiveVenousAdmixture;	// MacPuf variable PW			Factor 80
-	float		decilitersPerIteration;		// MacPuf variable FTCO
+	float		effectiveVenousAdmixture;           // MacPuf variable PW		Factor 80
+	float		decilitersPerIteration;             // MacPuf variable FTCO
 	float		fitnessAdjustedOutputPerIteration;	// MacPuf variable FTCOC
 }
 
@@ -35,5 +35,6 @@
 @property float effectiveVenousAdmixture;
 @property float decilitersPerIteration;
 @property float fitnessAdjustedOutputPerIteration;
+
 
 @end
