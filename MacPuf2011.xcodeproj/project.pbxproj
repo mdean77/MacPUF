@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC2AD1F914153AC400A28BC3 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AC2AD1F814153AC400A28BC3 /* README.rtf */; };
+		AC2AD1FC14153C7800A28BC3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = AC2AD1FB14153C7800A28BC3 /* README */; };
 		AC4B68C013C22F2B00D10B3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4B68BF13C22F2B00D10B3F /* Cocoa.framework */; };
 		AC4B68CA13C22F2B00D10B3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68C813C22F2B00D10B3F /* InfoPlist.strings */; };
 		AC4B68CD13C22F2B00D10B3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4B68CC13C22F2B00D10B3F /* main.m */; };
@@ -58,7 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC2AD1F814153AC400A28BC3 /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
+		AC2AD1FB14153C7800A28BC3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		AC4B68BB13C22F2B00D10B3F /* MacPuf2011.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacPuf2011.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4B68BF13C22F2B00D10B3F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AC4B68C213C22F2B00D10B3F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -150,7 +150,7 @@
 		AC4B68B013C22F2B00D10B3F = {
 			isa = PBXGroup;
 			children = (
-				AC2AD1F814153AC400A28BC3 /* README.rtf */,
+				AC2AD1FB14153C7800A28BC3 /* README */,
 				AC4B68C513C22F2B00D10B3F /* MacPuf2011 */,
 				AC4B68E613C22F2B00D10B3F /* MacPuf2011Tests */,
 				AC4B68BE13C22F2B00D10B3F /* Frameworks */,
@@ -371,7 +371,7 @@
 				ACE0DFC113CA7FF000F1AEB1 /* MainMenu.xib in Resources */,
 				ACE0DFC313CA7FF000F1AEB1 /* MyDocument.xib in Resources */,
 				ACE0DFDE13CA80E400F1AEB1 /* Credits.rtf in Resources */,
-				AC2AD1F914153AC400A28BC3 /* README.rtf in Resources */,
+				AC2AD1FC14153C7800A28BC3 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
