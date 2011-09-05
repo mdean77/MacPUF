@@ -10,15 +10,41 @@
 		AC4B68C013C22F2B00D10B3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4B68BF13C22F2B00D10B3F /* Cocoa.framework */; };
 		AC4B68CA13C22F2B00D10B3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68C813C22F2B00D10B3F /* InfoPlist.strings */; };
 		AC4B68CD13C22F2B00D10B3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4B68CC13C22F2B00D10B3F /* main.m */; };
-		AC4B68D013C22F2B00D10B3F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68CE13C22F2B00D10B3F /* Credits.rtf */; };
-		AC4B68D313C22F2B00D10B3F /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4B68D213C22F2B00D10B3F /* MyDocument.m */; };
-		AC4B68D613C22F2B00D10B3F /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68D413C22F2B00D10B3F /* MyDocument.xib */; };
-		AC4B68D913C22F2B00D10B3F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68D713C22F2B00D10B3F /* MainMenu.xib */; };
 		AC4B68DC13C22F2B00D10B3F /* MyDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC4B68DA13C22F2B00D10B3F /* MyDocument.xcdatamodeld */; };
 		AC4B68E313C22F2B00D10B3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4B68BF13C22F2B00D10B3F /* Cocoa.framework */; };
 		AC4B68EB13C22F2B00D10B3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68E913C22F2B00D10B3F /* InfoPlist.strings */; };
 		AC4B68EE13C22F2B00D10B3F /* MacPuf2011Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68ED13C22F2B00D10B3F /* MacPuf2011Tests.h */; };
 		AC4B68F013C22F2B00D10B3F /* MacPuf2011Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4B68EF13C22F2B00D10B3F /* MacPuf2011Tests.m */; };
+		ACE0DFA713CA7FC900F1AEB1 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DF9513CA7FC900F1AEB1 /* Human.m */; };
+		ACE0DFA813CA7FC900F1AEB1 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DF9513CA7FC900F1AEB1 /* Human.m */; };
+		ACE0DFA913CA7FC900F1AEB1 /* Metabolizer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DF9C13CA7FC900F1AEB1 /* Metabolizer.m */; };
+		ACE0DFAA13CA7FC900F1AEB1 /* Metabolizer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DF9C13CA7FC900F1AEB1 /* Metabolizer.m */; };
+		ACE0DFAB13CA7FC900F1AEB1 /* ArterialPool.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DF9D13CA7FC900F1AEB1 /* ArterialPool.m */; };
+		ACE0DFAC13CA7FC900F1AEB1 /* ArterialPool.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DF9D13CA7FC900F1AEB1 /* ArterialPool.m */; };
+		ACE0DFAD13CA7FC900F1AEB1 /* Brain.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DF9E13CA7FC900F1AEB1 /* Brain.m */; };
+		ACE0DFAE13CA7FC900F1AEB1 /* Brain.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DF9E13CA7FC900F1AEB1 /* Brain.m */; };
+		ACE0DFAF13CA7FC900F1AEB1 /* Tissue.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DF9F13CA7FC900F1AEB1 /* Tissue.m */; };
+		ACE0DFB013CA7FC900F1AEB1 /* Tissue.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DF9F13CA7FC900F1AEB1 /* Tissue.m */; };
+		ACE0DFB113CA7FC900F1AEB1 /* VenousPool.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA013CA7FC900F1AEB1 /* VenousPool.m */; };
+		ACE0DFB213CA7FC900F1AEB1 /* VenousPool.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA013CA7FC900F1AEB1 /* VenousPool.m */; };
+		ACE0DFB313CA7FC900F1AEB1 /* Heart.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA113CA7FC900F1AEB1 /* Heart.m */; };
+		ACE0DFB413CA7FC900F1AEB1 /* Heart.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA113CA7FC900F1AEB1 /* Heart.m */; };
+		ACE0DFB513CA7FC900F1AEB1 /* Lung.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA213CA7FC900F1AEB1 /* Lung.m */; };
+		ACE0DFB613CA7FC900F1AEB1 /* Lung.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA213CA7FC900F1AEB1 /* Lung.m */; };
+		ACE0DFB713CA7FC900F1AEB1 /* Bag.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA313CA7FC900F1AEB1 /* Bag.m */; };
+		ACE0DFB813CA7FC900F1AEB1 /* Bag.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA313CA7FC900F1AEB1 /* Bag.m */; };
+		ACE0DFB913CA7FC900F1AEB1 /* Ventilator.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA413CA7FC900F1AEB1 /* Ventilator.m */; };
+		ACE0DFBA13CA7FC900F1AEB1 /* Ventilator.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA413CA7FC900F1AEB1 /* Ventilator.m */; };
+		ACE0DFBB13CA7FC900F1AEB1 /* Factors.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA513CA7FC900F1AEB1 /* Factors.m */; };
+		ACE0DFBC13CA7FC900F1AEB1 /* Factors.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA513CA7FC900F1AEB1 /* Factors.m */; };
+		ACE0DFBD13CA7FC900F1AEB1 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA613CA7FC900F1AEB1 /* MyDocument.m */; };
+		ACE0DFBE13CA7FC900F1AEB1 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE0DFA613CA7FC900F1AEB1 /* MyDocument.m */; };
+		ACE0DFC113CA7FF000F1AEB1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE0DFBF13CA7FF000F1AEB1 /* MainMenu.xib */; };
+		ACE0DFC213CA7FF000F1AEB1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE0DFBF13CA7FF000F1AEB1 /* MainMenu.xib */; };
+		ACE0DFC313CA7FF000F1AEB1 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE0DFC013CA7FF000F1AEB1 /* MyDocument.xib */; };
+		ACE0DFC413CA7FF000F1AEB1 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE0DFC013CA7FF000F1AEB1 /* MyDocument.xib */; };
+		ACE0DFDE13CA80E400F1AEB1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = ACE0DFDD13CA80E400F1AEB1 /* Credits.rtf */; };
+		ACE0DFDF13CA80E400F1AEB1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = ACE0DFDD13CA80E400F1AEB1 /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,22 +63,68 @@
 		AC4B68C213C22F2B00D10B3F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		AC4B68C313C22F2B00D10B3F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		AC4B68C413C22F2B00D10B3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		AC4B68C713C22F2B00D10B3F /* MacPuf2011-Info.plist */ = {isa = PBXFileReference; path = "MacPuf2011-Info.plist"; sourceTree = "<group>"; };
+		AC4B68C713C22F2B00D10B3F /* MacPuf2011-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacPuf2011-Info.plist"; sourceTree = "<group>"; };
 		AC4B68C913C22F2B00D10B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AC4B68CB13C22F2B00D10B3F /* MacPuf2011-Prefix.pch */ = {isa = PBXFileReference; path = "MacPuf2011-Prefix.pch"; sourceTree = "<group>"; };
+		AC4B68CB13C22F2B00D10B3F /* MacPuf2011-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacPuf2011-Prefix.pch"; sourceTree = "<group>"; };
 		AC4B68CC13C22F2B00D10B3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AC4B68CF13C22F2B00D10B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		AC4B68D113C22F2B00D10B3F /* MyDocument.h */ = {isa = PBXFileReference; path = MyDocument.h; sourceTree = "<group>"; };
-		AC4B68D213C22F2B00D10B3F /* MyDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
-		AC4B68D513C22F2B00D10B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyDocument.xib; sourceTree = "<group>"; };
-		AC4B68D813C22F2B00D10B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AC4B68DB13C22F2B00D10B3F /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
 		AC4B68E213C22F2B00D10B3F /* MacPuf2011Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacPuf2011Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC4B68E813C22F2B00D10B3F /* MacPuf2011Tests-Info.plist */ = {isa = PBXFileReference; path = "MacPuf2011Tests-Info.plist"; sourceTree = "<group>"; };
+		AC4B68E813C22F2B00D10B3F /* MacPuf2011Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacPuf2011Tests-Info.plist"; sourceTree = "<group>"; };
 		AC4B68EA13C22F2B00D10B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AC4B68EC13C22F2B00D10B3F /* MacPuf2011Tests-Prefix.pch */ = {isa = PBXFileReference; path = "MacPuf2011Tests-Prefix.pch"; sourceTree = "<group>"; };
+		AC4B68EC13C22F2B00D10B3F /* MacPuf2011Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacPuf2011Tests-Prefix.pch"; sourceTree = "<group>"; };
 		AC4B68ED13C22F2B00D10B3F /* MacPuf2011Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacPuf2011Tests.h; sourceTree = "<group>"; };
 		AC4B68EF13C22F2B00D10B3F /* MacPuf2011Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacPuf2011Tests.m; sourceTree = "<group>"; };
+		ACE0DF8813CA7E2700F1AEB1 /* MACPUF17december1981JMD.for */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = MACPUF17december1981JMD.for; sourceTree = "<group>"; };
+		ACE0DF8D13CA7F9900F1AEB1 /* VARIABLES */ = {isa = PBXFileReference; lastKnownFileType = text; path = VARIABLES; sourceTree = "<group>"; };
+		ACE0DF8E13CA7F9900F1AEB1 /* Progress Logbook */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Progress Logbook"; sourceTree = "<group>"; };
+		ACE0DF8F13CA7FC900F1AEB1 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		ACE0DF9013CA7FC900F1AEB1 /* Metabolizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Metabolizer.h; sourceTree = "<group>"; };
+		ACE0DF9113CA7FC900F1AEB1 /* ArterialPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArterialPool.h; sourceTree = "<group>"; };
+		ACE0DF9213CA7FC900F1AEB1 /* Brain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brain.h; sourceTree = "<group>"; };
+		ACE0DF9313CA7FC900F1AEB1 /* Tissue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tissue.h; sourceTree = "<group>"; };
+		ACE0DF9413CA7FC900F1AEB1 /* VenousPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenousPool.h; sourceTree = "<group>"; };
+		ACE0DF9513CA7FC900F1AEB1 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		ACE0DF9613CA7FC900F1AEB1 /* Heart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heart.h; sourceTree = "<group>"; };
+		ACE0DF9713CA7FC900F1AEB1 /* Lung.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lung.h; sourceTree = "<group>"; };
+		ACE0DF9813CA7FC900F1AEB1 /* Bag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bag.h; sourceTree = "<group>"; };
+		ACE0DF9913CA7FC900F1AEB1 /* Ventilator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ventilator.h; sourceTree = "<group>"; };
+		ACE0DF9A13CA7FC900F1AEB1 /* Factors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factors.h; sourceTree = "<group>"; };
+		ACE0DF9B13CA7FC900F1AEB1 /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
+		ACE0DF9C13CA7FC900F1AEB1 /* Metabolizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Metabolizer.m; sourceTree = "<group>"; };
+		ACE0DF9D13CA7FC900F1AEB1 /* ArterialPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArterialPool.m; sourceTree = "<group>"; };
+		ACE0DF9E13CA7FC900F1AEB1 /* Brain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brain.m; sourceTree = "<group>"; };
+		ACE0DF9F13CA7FC900F1AEB1 /* Tissue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tissue.m; sourceTree = "<group>"; };
+		ACE0DFA013CA7FC900F1AEB1 /* VenousPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenousPool.m; sourceTree = "<group>"; };
+		ACE0DFA113CA7FC900F1AEB1 /* Heart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Heart.m; sourceTree = "<group>"; };
+		ACE0DFA213CA7FC900F1AEB1 /* Lung.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lung.m; sourceTree = "<group>"; };
+		ACE0DFA313CA7FC900F1AEB1 /* Bag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bag.m; sourceTree = "<group>"; };
+		ACE0DFA413CA7FC900F1AEB1 /* Ventilator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ventilator.m; sourceTree = "<group>"; };
+		ACE0DFA513CA7FC900F1AEB1 /* Factors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factors.m; sourceTree = "<group>"; };
+		ACE0DFA613CA7FC900F1AEB1 /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
+		ACE0DFBF13CA7FF000F1AEB1 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		ACE0DFC013CA7FF000F1AEB1 /* MyDocument.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDocument.xib; sourceTree = "<group>"; };
+		ACE0DFC513CA806F00F1AEB1 /* outline.f */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = outline.f; sourceTree = "<group>"; };
+		ACE0DFC613CA806F00F1AEB1 /* BAGER.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = BAGER.F; sourceTree = "<group>"; };
+		ACE0DFC713CA806F00F1AEB1 /* BRETH.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = BRETH.F; sourceTree = "<group>"; };
+		ACE0DFC813CA806F00F1AEB1 /* CHECK.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = CHECK.F; sourceTree = "<group>"; };
+		ACE0DFC913CA806F00F1AEB1 /* CLIN1.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = CLIN1.F; sourceTree = "<group>"; };
+		ACE0DFCA13CA806F00F1AEB1 /* CLIN2.F (experimental) */ = {isa = PBXFileReference; lastKnownFileType = text; path = "CLIN2.F (experimental)"; sourceTree = "<group>"; };
+		ACE0DFCB13CA806F00F1AEB1 /* COMMT.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = COMMT.F; sourceTree = "<group>"; };
+		ACE0DFCC13CA806F00F1AEB1 /* CONST.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = CONST.F; sourceTree = "<group>"; };
+		ACE0DFCD13CA806F00F1AEB1 /* DEADY.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = DEADY.F; sourceTree = "<group>"; };
+		ACE0DFCE13CA806F00F1AEB1 /* DEATH.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = DEATH.F; sourceTree = "<group>"; };
+		ACE0DFCF13CA806F00F1AEB1 /* DELAY.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = DELAY.F; sourceTree = "<group>"; };
+		ACE0DFD013CA806F00F1AEB1 /* DUMP.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = DUMP.F; sourceTree = "<group>"; };
+		ACE0DFD113CA806F00F1AEB1 /* GASES.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = GASES.F; sourceTree = "<group>"; };
+		ACE0DFD213CA806F00F1AEB1 /* GSINV.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = GSINV.F; sourceTree = "<group>"; };
+		ACE0DFD313CA806F00F1AEB1 /* MINIT.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = MINIT.F; sourceTree = "<group>"; };
+		ACE0DFD413CA806F00F1AEB1 /* NXTWD.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = NXTWD.F; sourceTree = "<group>"; };
+		ACE0DFD513CA806F00F1AEB1 /* QUERY.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = QUERY.F; sourceTree = "<group>"; };
+		ACE0DFD613CA806F00F1AEB1 /* SYMPT.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = SYMPT.F; sourceTree = "<group>"; };
+		ACE0DFD713CA806F00F1AEB1 /* UNITS.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = UNITS.F; sourceTree = "<group>"; };
+		ACE0DFD813CA806F00F1AEB1 /* V1.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = V1.F; sourceTree = "<group>"; };
+		ACE0DFD913CA806F00F1AEB1 /* VALUE.F */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = VALUE.F; sourceTree = "<group>"; };
+		ACE0DFDD13CA80E400F1AEB1 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +154,7 @@
 				AC4B68E613C22F2B00D10B3F /* MacPuf2011Tests */,
 				AC4B68BE13C22F2B00D10B3F /* Frameworks */,
 				AC4B68BC13C22F2B00D10B3F /* Products */,
+				ACE0DF8A13CA7E3600F1AEB1 /* Fortran Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,10 +189,8 @@
 		AC4B68C513C22F2B00D10B3F /* MacPuf2011 */ = {
 			isa = PBXGroup;
 			children = (
-				AC4B68D113C22F2B00D10B3F /* MyDocument.h */,
-				AC4B68D213C22F2B00D10B3F /* MyDocument.m */,
-				AC4B68D413C22F2B00D10B3F /* MyDocument.xib */,
-				AC4B68D713C22F2B00D10B3F /* MainMenu.xib */,
+				ACE0DF8C13CA7F5E00F1AEB1 /* Classes */,
+				ACE0DF8B13CA7ECF00F1AEB1 /* Resources */,
 				AC4B68DA13C22F2B00D10B3F /* MyDocument.xcdatamodeld */,
 				AC4B68C613C22F2B00D10B3F /* Supporting Files */,
 			);
@@ -129,11 +200,10 @@
 		AC4B68C613C22F2B00D10B3F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AC4B68C713C22F2B00D10B3F /* MacPuf2011-Info.plist */,
-				AC4B68C813C22F2B00D10B3F /* InfoPlist.strings */,
+				ACE0DF8D13CA7F9900F1AEB1 /* VARIABLES */,
+				ACE0DF8E13CA7F9900F1AEB1 /* Progress Logbook */,
 				AC4B68CB13C22F2B00D10B3F /* MacPuf2011-Prefix.pch */,
 				AC4B68CC13C22F2B00D10B3F /* main.m */,
-				AC4B68CE13C22F2B00D10B3F /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -156,6 +226,78 @@
 				AC4B68EC13C22F2B00D10B3F /* MacPuf2011Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACE0DF8A13CA7E3600F1AEB1 /* Fortran Source */ = {
+			isa = PBXGroup;
+			children = (
+				ACE0DFC513CA806F00F1AEB1 /* outline.f */,
+				ACE0DFC613CA806F00F1AEB1 /* BAGER.F */,
+				ACE0DFC713CA806F00F1AEB1 /* BRETH.F */,
+				ACE0DFC813CA806F00F1AEB1 /* CHECK.F */,
+				ACE0DFC913CA806F00F1AEB1 /* CLIN1.F */,
+				ACE0DFCA13CA806F00F1AEB1 /* CLIN2.F (experimental) */,
+				ACE0DFCB13CA806F00F1AEB1 /* COMMT.F */,
+				ACE0DFCC13CA806F00F1AEB1 /* CONST.F */,
+				ACE0DFCD13CA806F00F1AEB1 /* DEADY.F */,
+				ACE0DFCE13CA806F00F1AEB1 /* DEATH.F */,
+				ACE0DFCF13CA806F00F1AEB1 /* DELAY.F */,
+				ACE0DFD013CA806F00F1AEB1 /* DUMP.F */,
+				ACE0DFD113CA806F00F1AEB1 /* GASES.F */,
+				ACE0DFD213CA806F00F1AEB1 /* GSINV.F */,
+				ACE0DFD313CA806F00F1AEB1 /* MINIT.F */,
+				ACE0DFD413CA806F00F1AEB1 /* NXTWD.F */,
+				ACE0DFD513CA806F00F1AEB1 /* QUERY.F */,
+				ACE0DFD613CA806F00F1AEB1 /* SYMPT.F */,
+				ACE0DFD713CA806F00F1AEB1 /* UNITS.F */,
+				ACE0DFD813CA806F00F1AEB1 /* V1.F */,
+				ACE0DFD913CA806F00F1AEB1 /* VALUE.F */,
+				ACE0DF8813CA7E2700F1AEB1 /* MACPUF17december1981JMD.for */,
+			);
+			name = "Fortran Source";
+			sourceTree = "<group>";
+		};
+		ACE0DF8B13CA7ECF00F1AEB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACE0DFBF13CA7FF000F1AEB1 /* MainMenu.xib */,
+				ACE0DFC013CA7FF000F1AEB1 /* MyDocument.xib */,
+				AC4B68C713C22F2B00D10B3F /* MacPuf2011-Info.plist */,
+				AC4B68C813C22F2B00D10B3F /* InfoPlist.strings */,
+				ACE0DFDD13CA80E400F1AEB1 /* Credits.rtf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ACE0DF8C13CA7F5E00F1AEB1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ACE0DF8F13CA7FC900F1AEB1 /* Human.h */,
+				ACE0DF9013CA7FC900F1AEB1 /* Metabolizer.h */,
+				ACE0DF9113CA7FC900F1AEB1 /* ArterialPool.h */,
+				ACE0DF9213CA7FC900F1AEB1 /* Brain.h */,
+				ACE0DF9313CA7FC900F1AEB1 /* Tissue.h */,
+				ACE0DF9413CA7FC900F1AEB1 /* VenousPool.h */,
+				ACE0DF9513CA7FC900F1AEB1 /* Human.m */,
+				ACE0DF9613CA7FC900F1AEB1 /* Heart.h */,
+				ACE0DF9713CA7FC900F1AEB1 /* Lung.h */,
+				ACE0DF9813CA7FC900F1AEB1 /* Bag.h */,
+				ACE0DF9913CA7FC900F1AEB1 /* Ventilator.h */,
+				ACE0DF9A13CA7FC900F1AEB1 /* Factors.h */,
+				ACE0DF9B13CA7FC900F1AEB1 /* MyDocument.h */,
+				ACE0DF9C13CA7FC900F1AEB1 /* Metabolizer.m */,
+				ACE0DF9D13CA7FC900F1AEB1 /* ArterialPool.m */,
+				ACE0DF9E13CA7FC900F1AEB1 /* Brain.m */,
+				ACE0DF9F13CA7FC900F1AEB1 /* Tissue.m */,
+				ACE0DFA013CA7FC900F1AEB1 /* VenousPool.m */,
+				ACE0DFA113CA7FC900F1AEB1 /* Heart.m */,
+				ACE0DFA213CA7FC900F1AEB1 /* Lung.m */,
+				ACE0DFA313CA7FC900F1AEB1 /* Bag.m */,
+				ACE0DFA413CA7FC900F1AEB1 /* Ventilator.m */,
+				ACE0DFA513CA7FC900F1AEB1 /* Factors.m */,
+				ACE0DFA613CA7FC900F1AEB1 /* MyDocument.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,9 +368,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4B68CA13C22F2B00D10B3F /* InfoPlist.strings in Resources */,
-				AC4B68D013C22F2B00D10B3F /* Credits.rtf in Resources */,
-				AC4B68D613C22F2B00D10B3F /* MyDocument.xib in Resources */,
-				AC4B68D913C22F2B00D10B3F /* MainMenu.xib in Resources */,
+				ACE0DFC113CA7FF000F1AEB1 /* MainMenu.xib in Resources */,
+				ACE0DFC313CA7FF000F1AEB1 /* MyDocument.xib in Resources */,
+				ACE0DFDE13CA80E400F1AEB1 /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +380,9 @@
 			files = (
 				AC4B68EB13C22F2B00D10B3F /* InfoPlist.strings in Resources */,
 				AC4B68EE13C22F2B00D10B3F /* MacPuf2011Tests.h in Resources */,
+				ACE0DFC213CA7FF000F1AEB1 /* MainMenu.xib in Resources */,
+				ACE0DFC413CA7FF000F1AEB1 /* MyDocument.xib in Resources */,
+				ACE0DFDF13CA80E400F1AEB1 /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +410,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4B68CD13C22F2B00D10B3F /* main.m in Sources */,
-				AC4B68D313C22F2B00D10B3F /* MyDocument.m in Sources */,
 				AC4B68DC13C22F2B00D10B3F /* MyDocument.xcdatamodeld in Sources */,
+				ACE0DFA713CA7FC900F1AEB1 /* Human.m in Sources */,
+				ACE0DFA913CA7FC900F1AEB1 /* Metabolizer.m in Sources */,
+				ACE0DFAB13CA7FC900F1AEB1 /* ArterialPool.m in Sources */,
+				ACE0DFAD13CA7FC900F1AEB1 /* Brain.m in Sources */,
+				ACE0DFAF13CA7FC900F1AEB1 /* Tissue.m in Sources */,
+				ACE0DFB113CA7FC900F1AEB1 /* VenousPool.m in Sources */,
+				ACE0DFB313CA7FC900F1AEB1 /* Heart.m in Sources */,
+				ACE0DFB513CA7FC900F1AEB1 /* Lung.m in Sources */,
+				ACE0DFB713CA7FC900F1AEB1 /* Bag.m in Sources */,
+				ACE0DFB913CA7FC900F1AEB1 /* Ventilator.m in Sources */,
+				ACE0DFBB13CA7FC900F1AEB1 /* Factors.m in Sources */,
+				ACE0DFBD13CA7FC900F1AEB1 /* MyDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +431,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4B68F013C22F2B00D10B3F /* MacPuf2011Tests.m in Sources */,
+				ACE0DFA813CA7FC900F1AEB1 /* Human.m in Sources */,
+				ACE0DFAA13CA7FC900F1AEB1 /* Metabolizer.m in Sources */,
+				ACE0DFAC13CA7FC900F1AEB1 /* ArterialPool.m in Sources */,
+				ACE0DFAE13CA7FC900F1AEB1 /* Brain.m in Sources */,
+				ACE0DFB013CA7FC900F1AEB1 /* Tissue.m in Sources */,
+				ACE0DFB213CA7FC900F1AEB1 /* VenousPool.m in Sources */,
+				ACE0DFB413CA7FC900F1AEB1 /* Heart.m in Sources */,
+				ACE0DFB613CA7FC900F1AEB1 /* Lung.m in Sources */,
+				ACE0DFB813CA7FC900F1AEB1 /* Bag.m in Sources */,
+				ACE0DFBA13CA7FC900F1AEB1 /* Ventilator.m in Sources */,
+				ACE0DFBC13CA7FC900F1AEB1 /* Factors.m in Sources */,
+				ACE0DFBE13CA7FC900F1AEB1 /* MyDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,30 +463,6 @@
 				AC4B68C913C22F2B00D10B3F /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AC4B68CE13C22F2B00D10B3F /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC4B68CF13C22F2B00D10B3F /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		AC4B68D413C22F2B00D10B3F /* MyDocument.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC4B68D513C22F2B00D10B3F /* en */,
-			);
-			name = MyDocument.xib;
-			sourceTree = "<group>";
-		};
-		AC4B68D713C22F2B00D10B3F /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC4B68D813C22F2B00D10B3F /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		AC4B68E913C22F2B00D10B3F /* InfoPlist.strings */ = {
@@ -457,6 +601,7 @@
 				AC4B68F513C22F2B00D10B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC4B68F613C22F2B00D10B3F /* Build configuration list for PBXNativeTarget "MacPuf2011Tests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +610,7 @@
 				AC4B68F813C22F2B00D10B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
