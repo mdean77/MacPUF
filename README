@@ -1,0 +1,5 @@
+This project is a translation of the original MacPuf program written by C.J. Dickinson
+in the late 1970s using Fortran.  The Fortran source is slowly being translated into
+Cocoa;  I began this project in 2001 with very early Cocoa interfaces.
+
+Information about progress in the early years is in Progress Logbook.
