@@ -10,7 +10,6 @@
 		AC4B68C013C22F2B00D10B3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4B68BF13C22F2B00D10B3F /* Cocoa.framework */; };
 		AC4B68CA13C22F2B00D10B3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68C813C22F2B00D10B3F /* InfoPlist.strings */; };
 		AC4B68CD13C22F2B00D10B3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4B68CC13C22F2B00D10B3F /* main.m */; };
-		AC4B68DC13C22F2B00D10B3F /* MyDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC4B68DA13C22F2B00D10B3F /* MyDocument.xcdatamodeld */; };
 		AC4B68E313C22F2B00D10B3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4B68BF13C22F2B00D10B3F /* Cocoa.framework */; };
 		AC4B68EB13C22F2B00D10B3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68E913C22F2B00D10B3F /* InfoPlist.strings */; };
 		AC4B68EE13C22F2B00D10B3F /* MacPuf2011Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = AC4B68ED13C22F2B00D10B3F /* MacPuf2011Tests.h */; };
@@ -67,7 +66,6 @@
 		AC4B68C913C22F2B00D10B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AC4B68CB13C22F2B00D10B3F /* MacPuf2011-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacPuf2011-Prefix.pch"; sourceTree = "<group>"; };
 		AC4B68CC13C22F2B00D10B3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AC4B68DB13C22F2B00D10B3F /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
 		AC4B68E213C22F2B00D10B3F /* MacPuf2011Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacPuf2011Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4B68E813C22F2B00D10B3F /* MacPuf2011Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacPuf2011Tests-Info.plist"; sourceTree = "<group>"; };
 		AC4B68EA13C22F2B00D10B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 			children = (
 				ACE0DF8C13CA7F5E00F1AEB1 /* Classes */,
 				ACE0DF8B13CA7ECF00F1AEB1 /* Resources */,
-				AC4B68DA13C22F2B00D10B3F /* MyDocument.xcdatamodeld */,
 				AC4B68C613C22F2B00D10B3F /* Supporting Files */,
 			);
 			path = MacPuf2011;
@@ -410,7 +407,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4B68CD13C22F2B00D10B3F /* main.m in Sources */,
-				AC4B68DC13C22F2B00D10B3F /* MyDocument.xcdatamodeld in Sources */,
 				ACE0DFA713CA7FC900F1AEB1 /* Human.m in Sources */,
 				ACE0DFA913CA7FC900F1AEB1 /* Metabolizer.m in Sources */,
 				ACE0DFAB13CA7FC900F1AEB1 /* ArterialPool.m in Sources */,
@@ -613,19 +609,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		AC4B68DA13C22F2B00D10B3F /* MyDocument.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AC4B68DB13C22F2B00D10B3F /* MyDocument.xcdatamodel */,
-			);
-			currentVersion = AC4B68DB13C22F2B00D10B3F /* MyDocument.xcdatamodel */;
-			path = MyDocument.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AC4B68B213C22F2B00D10B3F /* Project object */;
 }
