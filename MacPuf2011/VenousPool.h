@@ -13,7 +13,7 @@
 
 @interface VenousPool : Metabolizer {
     // Oxygen 
-    //float		amountOfOxygen;		// MacPuf variable VO2MT  Factor 98
+    //float		amountOfOxygen;		// MacPuf var variable VO2MT  Factor 98
     //float		pO2;			// MacPuf variable VO2PR  Factor 96
     //float		oxygenContent;		// MacPuf variable VO2CT  Factor 31
     //float		oxygenSaturation;	// maximum, percent       (new)
