@@ -1,2 +1,8 @@
 /* Localized versions of Info.plist keys */
 
+CFBundleName = "MacPuf for OS X";
+CFBundleShortVersionString = "1.0.0d1";
+CFBundleGetInfoString = "MacPuf for OS X 1.0.0d1, Copyright © 2002–2011 J. Michael Dean, M.D., M.B.A.";
+NSHumanReadableCopyright = "Copyright © 2002–2011  J. Michael Dean, M.D., M.B.A.\nAll rights reserved.";
+
+"Macpuf document" = "Macpuf document";
