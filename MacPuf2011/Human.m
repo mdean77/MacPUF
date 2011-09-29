@@ -153,8 +153,8 @@
 
 -(NSString *) dumpParametersReport	// Print out first 6 changeable parameters
 {
-    NSMutableString *result;
-    result = [[NSMutableString alloc] initWithFormat:@"\n     List of first six parameters:\n     Inspired O2 %%:%6.2f\n     Inspired CO2 %%:%6.2f\n     Cardiac performance %%:%6.2f\n     Metabolic rate %%:%6.2f\n     Right to left:%6.2f\n     Extra dead space:%6.2f\n",
+    NSString *result;
+    result = [[NSString alloc] initWithFormat:@"\n     List of first six parameters:\n     Inspired O2 %%:%6.2f\n     Inspired CO2 %%:%6.2f\n     Cardiac performance %%:%6.2f\n     Metabolic rate %%:%6.2f\n     Right to left:%6.2f\n     Extra dead space:%6.2f\n",
     [myLungs FiO2],[myLungs FiCO2],[myHeart cardiacFunction],metabolicRate, [myHeart rightToLeftShunt],[myLungs addedDeadSpace]];
     NSLog(result);
     return result;
