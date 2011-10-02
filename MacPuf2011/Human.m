@@ -383,8 +383,8 @@
         [myLungs setAmountOfOxygen:[myLungs amountOfOxygen]*x];
         [myLungs setAmountOfCO2:[myLungs amountOfCO2]*x];
         [myLungs setAmountOfNitrogen:[myLungs amountOfNitrogen]*x];
-        [myLungs setpO2:[myLungs pO2]*x];
-        [myLungs setpCO2:[myLungs pCO2]*x];
+        [myLungs setPO2:[myLungs pO2]*x];
+        [myLungs setPCO2:[myLungs pCO2]*x];
     }
     
     if (c11 > BARRF) {
@@ -393,8 +393,8 @@
         [myLungs setAmountOfCO2:[myLungs amountOfCO2]+x*[myLungs FiCO2]];
         [myLungs setAmountOfNitrogen:[myLungs amountOfNitrogen]+x*(100 - [myLungs FiO2]-[myLungs FiCO2])];
         xx = c11/([myLungs amountOfOxygen]+[myLungs amountOfCO2]+[myLungs amountOfNitrogen]);
-        [myLungs setpO2:[myLungs amountOfOxygen]*xx];
-        [myLungs setpCO2:[myLungs amountOfCO2]*xx];
+        [myLungs setPO2:[myLungs amountOfOxygen]*xx];
+        [myLungs setPCO2:[myLungs amountOfCO2]*xx];
     }
     }    
     
@@ -415,6 +415,7 @@
     // THERE IS A PROBLEM HERE THAT I DO NOT UNDERSTAND AS THE VALUE IS SET 10 TIMES TOO LOW
     // FOR THE PRESENT I AM PATCHING OUT THE USE OF FITNESS ADJUSTED CARDIAC OUTPUT JUST TO GET
     // MACPUF DEBUGGED.  I WILL NEED TO COME BACK TO THIS ISSUE.
+		// October 2011 - returning to this issue prior to Big Nerd Ranch
     
 // Oxygen content or pressure affects venous admixture and very slowly DPG
     DPG = (DPG + (23.3 - [myArteries oxygenContent] - DPG) * ft * .05);
@@ -504,7 +505,7 @@
     }
 
 // And set the pH based on the adjusted bicarbonate:
-    [myArteries setPh];
+    [myArteries setPH];
     
 // Estimate arterial pCO2 change for later effects on brain chemoceptors
     [myBrain setC2CHN:[myArteries pCO2]];
@@ -530,10 +531,10 @@
     
     u = ft * (pow(s,c4)*c5+c7 + [myHeart effectiveCardiacOutput]);
 // PATCHOUT OF FITNESS ADJUSTMENT
-    x=  [myTissues amountOfOxygen] + [myHeart fitnessAdjustedOutputPerIteration] *
-        ([myArteries effluentOxygenContent] - [myTissues oxygenContent]) - u + XLACT;
-//  x=  [myTissues amountOfOxygen] + 0.98*[myHeart decilitersPerIteration] *
-//      ([myArteries effluentOxygenContent] - [myTissues oxygenContent]) - u + XLACT;
+//    x=  [myTissues amountOfOxygen] + [myHeart fitnessAdjustedOutputPerIteration] *
+//        ([myArteries effluentOxygenContent] - [myTissues oxygenContent]) - u + XLACT;
+		x=  [myTissues amountOfOxygen] + 0.98*[myHeart decilitersPerIteration] *
+				([myArteries effluentOxygenContent] - [myTissues oxygenContent]) - u + XLACT;
 
 
 
@@ -546,13 +547,13 @@
       
 
 // Compute the tissue pO2 damping appropriately:
-    [myTissues setpO2:
+    [myTissues setPO2:
         [myTissues dampChange:[myTissues amountOfOxygen]*c31
                      oldValue:[myTissues pO2]
                  dampConstant:c55]];
     x = [myTissues amountOfOxygen] - 250;
     if (x > 0 ) {
-        [myTissues setpO2:45 + 0.09*x];	// FORTRAN Line 520
+        [myTissues setPO2:45 + 0.09*x];	// FORTRAN Line 520
     }
     
 // FORTRAN LINE 530 STARTS HERE
@@ -623,12 +624,12 @@
     x = ([myTissues pN2]-[myTissues slowN2]) * c60;
 
 // PATCHOUT ADJUSTMENT FOR FITNESS
-    [myTissues setAmountOfNitrogen:
-        [myTissues amountOfNitrogen] + [myHeart fitnessAdjustedOutputPerIteration] *
-        ([myArteries effluentNitrogenContent] - ([myTissues pN2]*0.00127))-x];
 //    [myTissues setAmountOfNitrogen:
-//        [myTissues amountOfNitrogen] + 0.98*[myHeart decilitersPerIteration] *
+//        [myTissues amountOfNitrogen] + [myHeart fitnessAdjustedOutputPerIteration] *
 //        ([myArteries effluentNitrogenContent] - ([myTissues pN2]*0.00127))-x];
+    [myTissues setAmountOfNitrogen:
+        [myTissues amountOfNitrogen] + 0.98*[myHeart decilitersPerIteration] *
+        ([myArteries effluentNitrogenContent] - ([myTissues pN2]*0.00127))-x];
     
     [myTissues setAmountSlowNitrogen: [myTissues amountSlowNitrogen] + x];
 
@@ -664,12 +665,12 @@
 // Tissue CO2 exchanges.  U is still the metabolism factor calculated earlier
 // 0.001 converts from cc to litres
 // PATCHOUT FITNESS ADJUSTMENT
-    [myTissues setAmountOfCO2:[myTissues amountOfCO2] +
-        ([myHeart fitnessAdjustedOutputPerIteration]*([myArteries effluentCO2Content]-[myTissues carbonDioxideContent])
-         + [myTissues respiratoryQuotient]*u)*0.001];
 //    [myTissues setAmountOfCO2:[myTissues amountOfCO2] +
-//        (0.98*[myHeart decilitersPerIteration]*([myArteries effluentCO2Content]-[myTissues carbonDioxideContent])
+//        ([myHeart fitnessAdjustedOutputPerIteration]*([myArteries effluentCO2Content]-[myTissues carbonDioxideContent])
 //         + [myTissues respiratoryQuotient]*u)*0.001];
+    [myTissues setAmountOfCO2:[myTissues amountOfCO2] +
+        (0.98*[myHeart decilitersPerIteration]*([myArteries effluentCO2Content]-[myTissues carbonDioxideContent])
+         + [myTissues respiratoryQuotient]*u)*0.001];
     
 // Compute partial pressures from total CO2 and standard bicarbonate
 // These methods were completely revised in 1987 to track movement up or down in tissue CO2 and
@@ -677,7 +678,7 @@
     
 
     c2ref = [myTissues pCO2];
-    [myTissues setpCO2:
+    [myTissues setPCO2:
         ([myTissues amountOfCO2]*c30 - [myTissues bicarbonateAmount]*c36+c33)*c43];	// FORTRAN Line 5 past 670
 
 // Track movement up or down in tissue CO2 and modify buffer constant accordingly
@@ -705,7 +706,7 @@
 
    [myTissues setBicarbonateContent:[myTissues bicarbonateAmount]*c13+([myTissues pCO2]-40)*c3 - [myTissues TC3AJ]];
    if (([myTissues bicarbonateContent] * [myTissues pCO2]) <= 0) NSLog(@"We have a bad fucking arithmetic problem in tissue bicarb!");
-   [myTissues setPh];
+   [myTissues setPH];
    [myTissues calcContents:temperature:Hct:Hgb:DPG];
 
 // Amounts of gases in venous pool increase by arriving blood from tissues and decrement by blood going to lungs.
@@ -717,28 +718,29 @@
        [myVeins setAmountOfCO2:[myVeins amountOfCO2]+22.4 * [myVeins addBicarb]];
    
 // PATCHOUT Fitness adjustment
-   [myVeins setAmountOfCO2:
-   [myVeins amountOfCO2] + [myHeart fitnessAdjustedOutputPerIteration]*[myTissues carbonDioxideContent]-
-       [myHeart decilitersPerIteration]*([myVeins carbonDioxideContent]*c14 - [myArteries carbonDioxideContent]*
-                                  [myHeart leftToRightShunt])+x*[myArteries effluentCO2Content]];
 //   [myVeins setAmountOfCO2:
-//       [myVeins amountOfCO2] + 0.98*[myHeart decilitersPerIteration]*[myTissues carbonDioxideContent]-
+//   [myVeins amountOfCO2] + [myHeart fitnessAdjustedOutputPerIteration]*[myTissues carbonDioxideContent]-
 //       [myHeart decilitersPerIteration]*([myVeins carbonDioxideContent]*c14 - [myArteries carbonDioxideContent]*
-//                                         [myHeart leftToRightShunt])+x*[myArteries effluentCO2Content]];
-   
+//                                  [myHeart leftToRightShunt])+x*[myArteries effluentCO2Content]];
+   [myVeins setAmountOfCO2:
+       [myVeins amountOfCO2] + 0.98*[myHeart decilitersPerIteration]*[myTissues carbonDioxideContent]-
+       [myHeart decilitersPerIteration]*([myVeins carbonDioxideContent]*c14 - [myArteries carbonDioxideContent]*
+                                         [myHeart leftToRightShunt])+x*[myArteries effluentCO2Content]];
+// NOT SURE IF THIS LINE SHOULD BE AVAILABLE OR NOT
+// I THINK NOT - pCO2 goes into toilet if I leave this in place so need to find ou where it came from 	
 //   [myVeins setAmountOfCO2: [myVeins amountOfCO2] + 0.1*[myHeart fitnessAdjustedOutputPerIteration]*[myTissues carbonDioxideContent]];
 //   [myVeins setAmountOfCO2: [myVeins amountOfCO2] - [myHeart decilitersPerIteration]*[myVeins carbonDioxideContent]];
 //   [myVeins setAmountOfCO2: [myVeins amountOfCO2] + x * [myArteries effluentCO2Content]];
    
    
-   [myVeins setAmountOfOxygen:
-       [myVeins amountOfOxygen] + [myHeart fitnessAdjustedOutputPerIteration]*[myTissues oxygenContent]-
-       [myHeart decilitersPerIteration]*([myVeins oxygenContent]*c14 - [myArteries oxygenContent]*
-                                  [myHeart leftToRightShunt])+x*[myArteries effluentOxygenContent]];
 //   [myVeins setAmountOfOxygen:
-//       [myVeins amountOfOxygen] + 0.98*[myHeart decilitersPerIteration]*[myTissues oxygenContent]-
+//       [myVeins amountOfOxygen] + [myHeart fitnessAdjustedOutputPerIteration]*[myTissues oxygenContent]-
 //       [myHeart decilitersPerIteration]*([myVeins oxygenContent]*c14 - [myArteries oxygenContent]*
-//                                         [myHeart leftToRightShunt])+x*[myArteries effluentOxygenContent]];
+//                                  [myHeart leftToRightShunt])+x*[myArteries effluentOxygenContent]];
+   [myVeins setAmountOfOxygen:
+       [myVeins amountOfOxygen] + 0.98*[myHeart decilitersPerIteration]*[myTissues oxygenContent]-
+       [myHeart decilitersPerIteration]*([myVeins oxygenContent]*c14 - [myArteries oxygenContent]*
+                                         [myHeart leftToRightShunt])+x*[myArteries effluentOxygenContent]];
    
 // Adjust tissue and venous pool bicarb amounts - bicarb moves after delay line into arterial side
    xnew = [myHeart fitnessAdjustedOutputPerIteration]*0.1*([myTissues bicarbonateAmount]*c13 -([myVeins bicarbonateContent]-
@@ -900,17 +902,17 @@
 // compute end expiratory partial pressures
    y = [myLungs amountOfOxygen]*u;
    z = [myLungs amountOfCO2] * u;
-   [myLungs setpO2:
+   [myLungs setPO2:
    [myLungs dampChange:(y+(po2 - y)*v)
               oldValue:[myLungs pO2]
           dampConstant:x]];
 
-   [myLungs setpCO2:
+   [myLungs setPCO2:
    [myLungs dampChange:(z+(pc2-z)*v)
               oldValue:[myLungs pCO2]
           dampConstant:x]];
-   if ([myLungs pO2] < 0.00001) [myLungs setpO2:0.00001];
-   if ([myLungs pCO2] < 0.00001) [myLungs setpCO2:0.00001];
+   if ([myLungs pO2] < 0.00001) [myLungs setPO2:0.00001];
+   if ([myLungs pCO2] < 0.00001) [myLungs setPCO2:0.00001];
 
 // Determine respiratory quotient (expired) then alveolar gas tensions and then finally
 // the contents of O2 and CO2 in pulmonary capillary blood
@@ -956,8 +958,8 @@
 
    [myBrain setAmountOfCO2:[myBrain amountOfCO2]+y*([myArteries carbonDioxideContent]-[myBrain carbonDioxideContent])
        + 2.15*x];
-   [myBrain setpO2:[myBrain amountOfOxygen]*1.6];
-   [myBrain setpCO2:[myBrain amountOfCO2]*0.078];
+   [myBrain setPO2:[myBrain amountOfOxygen]*1.6];
+   [myBrain setPCO2:[myBrain amountOfCO2]*0.078];
    w = [myBrain pCO2] - 40;
    y = [myBrain bicarbonateContent] + [myBrain bicarbDeviation] + 0.2*w;
 

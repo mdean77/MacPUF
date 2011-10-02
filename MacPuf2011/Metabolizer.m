@@ -3,7 +3,8 @@
 //  MacPuf
 //
 //  Created by Michael Dean on Thu Mar 07 2002.
-//  Copyright (c) 2001 J. Michael Dean, M.D., M.B.A.. All rights reserved.
+//  Massively revised October 2, 2011 (nine years)
+//  Copyright (c) 2011 J. Michael Dean, M.D., M.B.A.. All rights reserved.
 //
 
 #import "Metabolizer.h"
@@ -22,6 +23,16 @@ float abs_r(float f) {
 
 @implementation Metabolizer
 
+@synthesize amountOfOxygen;
+@synthesize pO2;
+@synthesize oxygenContent;
+@synthesize amountOfCO2;
+@synthesize pCO2;
+@synthesize pH;
+@synthesize carbonDioxideContent;
+@synthesize oxygenSaturation;
+@synthesize bicarbonateContent;
+
 -(float)dampChange:(float) newValue 
         oldValue:(float) oldValue 
         dampConstant:(float) dampConstant
@@ -35,101 +46,16 @@ float abs_r(float f) {
         pH = (6.1 + log10((bicarbonateContent)/(pCO2 * .03)));
     }
 
+// THIS IS REDUNDANT BUT CAN CLEAN UP LATER
+-(void) setPH {
+				pH = (6.1 + log10((bicarbonateContent)/(pCO2 * .03)));
+}
+
 -(void)setPh:(float)bicarbonate CO2:(float)CO2
 {
     pH = (6.1 + log10((bicarbonate)/(CO2 * .03)));
 }
     
-// The following methods return the blood gases from respective objects.  
-
--(float) amountOfOxygen
-{
-    return amountOfOxygen;
-}
-
--(float) pO2
-{
-    return pO2;
-}
-
--(float) oxygenContent
-{
-    return oxygenContent;
-}
-
--(float) amountOfCO2
-{
-    return amountOfCO2;
-}
-
--(float) pCO2
-{
-    return pCO2;
-}
-
--(float) carbonDioxideContent
-{
-    return carbonDioxideContent;
-}
-
--(float) pH
-{
-    return pH;
-}
-
--(float) oxygenSaturation
-{
-    return oxygenSaturation;
-}
-
--(float) bicarbonateContent
-{
-    return bicarbonateContent;
-}
-
-
-// The following methods are dummy methods that are needed for GASES and GSINV methods to be
-// defined in the Metabolizer object.  
-
--(void) setpO2:(float)value
-{
-    pO2 = value;
-}
-
--(void) setpCO2:(float)value
-{
-    pCO2 = value;
-}
-
--(void) setAmountOfOxygen:(float)value
-{
-    amountOfOxygen = value;
-}
-
--(void) setAmountOfCO2:(float)value
-{
-    amountOfCO2 = value;
-}
-
--(void) setOxygenSaturation:(float)value
-{
-    oxygenSaturation = value;
-}
-
--(void) setOxygenContent:(float)value
-{
-    oxygenContent = value;
-}
-
--(void) setCarbonDioxideContent:(float)value
-{
-    carbonDioxideContent = value;
-}
-
--(void) setBicarbonateContent:(float)value
-{
-    bicarbonateContent = value;
-}
 
 // This method replaces the MacPuf GASES subroutine.  It accepts any values of pO2, pCO2 and pH and
 // works out O2 and CO2 contents and the saturation of O2.  It then uses the appropriate routines to
@@ -139,6 +65,7 @@ float abs_r(float f) {
 
 -(void) calcContents:(float)temperature:(float)Hct:(float)Hgb:(float)DPG
 {
+	  // NSLog(@"calcContents method");
     // constants needed for the rather complex Kelman equations
     const 	float a1 = -8.532229E3;
     const 	float a2 = 2.121401E3;
@@ -186,7 +113,7 @@ float abs_r(float f) {
     const 	float a5 = -3.134626E4;
     const 	float a6 = 2.396167E3;
     const 	float a7 = -6.710441E1;
-    float	p, pk, dox, x, t, sol, dr, cp, cc, h, sat;
+    float	p, pk, dox, x, t, sol, dr, cp, cc, h;
     pO2 = trialGases.pO2;	// Note that this causes a direct change of the object pO2!
     pCO2 = trialGases.pCO2;
     x = pO2 * pow(10,(0.4*(pH - (7.4+(DPG-3.8)*0.025)) + 0.024*(37 - temperature)) + 0.026057669*log(40/pCO2));
@@ -204,6 +131,7 @@ float abs_r(float f) {
     h = Hct * 0.01;
     trialGases.contO2 = Hgb*oxygenSaturation*1.34 + 0.003*pO2;
     trialGases.contCO2 = (cc*h+(1-h)*cp)*2.22;
+	  if (trialGases.contCO2 < 0.001) trialGases.contCO2 = 0.001;
     return trialGases;
 
 }
@@ -353,7 +281,4 @@ middle:				// FORTRAN line 210
     goto start;
 }
     
-
-
-
 @end
