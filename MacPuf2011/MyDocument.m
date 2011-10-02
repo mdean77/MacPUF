@@ -152,7 +152,7 @@
 -(IBAction) simulate:(id)sender
 {
     int i;
-    int textLength;
+    NSUInteger textLength;
     [person setIterations:iterations];  // needed so the human object can handle bicarb and acid administration
     NSString  *header1 = @"\n   Time     0     10    20    30    40    50    60    70    80    90   100   110   120\n";
     NSString  *header2 = @"(Min:Secs)  .     .     .     .     .     .     .     .     .     .     .     .     .\n";
