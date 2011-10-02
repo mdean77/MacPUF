@@ -12,6 +12,12 @@
 
 @implementation Brain
 
+@synthesize oxygenationIndex;
+@synthesize bloodFlow;
+@synthesize symptomFlag;
+@synthesize bicarbDeviation;
+@synthesize C2CHN;
+
 -(id) init
 {
     NSLog(@"Creating %@", self);    
@@ -41,61 +47,6 @@
             @"\nBrain/CSF%8.1f%8.1f%8.1f%8.1f%8.0f%8.0f%7.3f%6.1f",
             pO2, pCO2,oxygenContent, carbonDioxideContent,amountOfOxygen,amountOfCO2,pH,
             bicarbonateContent+bicarbDeviation];
-}
-// Accessors
--(float) oxygenationIndex
-{
-    return oxygenationIndex;
-}
-
--(float) bloodFlow
-{
-    return bloodFlow;
-}
-
--(float) symptomFlag
-{
-    return symptomFlag;
-}
-
--(float) bicarbDeviation
-{
-    return bicarbDeviation;
-}
-
--(float) C2CHN
-{
-    return C2CHN;
-}
-
-
--(void) setBicarbDeviation:(float)value
-{
-    bicarbDeviation = value;
-}
-
--(void) setOxygenationIndex:(float)value
-{
-    oxygenationIndex = value;
-}
--(void) setpH:(float)value
-{
-    pH = value;
-}
-
--(void) setSymptomFlag:(float)value
-{
-    symptomFlag = value;
-}
-
--(void) setBloodFlow:(float)value
-{
-    bloodFlow = value;
-}
-
--(void) setC2CHN:(float)value
-{
-    C2CHN = value;
 }
 
 @end

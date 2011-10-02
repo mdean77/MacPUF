@@ -976,15 +976,15 @@
 
 // Restrict rate of change of brain receptor pH
 // Fortran line 1080  NOTE that setpH is NOT same function as setPh!!
-   [myBrain setpH:
+   [myBrain setPH:
        [myBrain dampChange:x
                   oldValue:[myBrain pH]
               dampConstant:z]]; 
     z = 6.1 + log10(([myVeins bicarbonateAmount]*c1+([myBrain pCO2]-40)*c3)/([myBrain pCO2]*0.03));
     xc2 = [myBrain pH];
-    [myBrain setpH:z];
+    [myBrain setPH:z];
     [myBrain calcContents:temperature:Hct:Hgb:DPG];
-    [myBrain setpH:xc2];
+    [myBrain setPH:xc2];
     
  // Now we have some ventilation calculations, which hopefully will close the loop on old Puf.
     if ([myVentilator On]) [myLungs setTotalVentilation:c51];

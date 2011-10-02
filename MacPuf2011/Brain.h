@@ -36,19 +36,13 @@
     //float		pH;			// MacPuf variable BPH    Factor 36
     float		C2CHN;			// variable to track changes in brain pCO2
 }
-// Accessors
--(float) oxygenationIndex;
--(float) bloodFlow;
--(float) symptomFlag;
--(float) bicarbDeviation;
--(float) C2CHN;
 
--(void) setBicarbDeviation:(float)value;
--(void) setOxygenationIndex:(float)value;
--(void) setSymptomFlag:(float)value;
--(void) setBloodFlow:(float)value;
--(void) setC2CHN:(float)value;
--(void) setpH:(float)value;
+@property float oxygenationIndex;
+@property float bloodFlow;
+@property float symptomFlag;
+@property float bicarbDeviation;
+@property float C2CHN;
+
 
 
 
