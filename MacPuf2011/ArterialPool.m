@@ -13,6 +13,13 @@
 
 @implementation ArterialPool
 
+@synthesize	effluentOxygenContent;
+@synthesize	effluentCO2Content;
+@synthesize	nitrogenContent;
+@synthesize	effluentNitrogenContent;
+@synthesize	amountOfN2;
+@synthesize	lactateConcentration;
+
 -(id) init
 {
     NSLog(@"Creating %@", self);    
@@ -44,64 +51,5 @@
             pO2, pCO2,oxygenContent, carbonDioxideContent,amountOfOxygen,amountOfCO2,pH,
             bicarbonateContent];
 }
-
-// Accessor functions
--(float)	effluentOxygenContent{
-    return effluentOxygenContent;
-}
-
--(float)	effluentCO2Content{
-    return effluentCO2Content;
-}
-
--(float)	pN2{
-    return pN2;
-}
-
--(float)	nitrogenContent{
-    return nitrogenContent;
-}
-
--(float)	effluentNitrogenContent {
-    return effluentNitrogenContent;
-}
-
-
--(float)	amountOfN2{
-    return amountOfN2;
-}
-
--(float)	lactateConcentration{
-    return lactateConcentration;
-}
-
--(void) 	setEffluentOxygenContent:(float)value{
-    effluentOxygenContent = value;
-}
-
--(void)		setEffluentCO2Content:(float)value{
-    effluentCO2Content = value;
-}
-
--(void)		setpN2:(float)value{
-    pN2 = value;
-}
-
--(void)		setNitrogenContent:(float)value{
-    nitrogenContent = value;
-}
-
--(void)		setEffluentNitrogenContent:(float)value {
-    effluentNitrogenContent = value;
-}
-
--(void)		setAmountOfN2:(float)value{
-    amountOfN2 = value;
-}
-
--(void)		setLactateConcentration:(float)value{
-    lactateConcentration = value;
-}
-
 
 @end
