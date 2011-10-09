@@ -252,7 +252,7 @@
 -(IBAction) inspectMacPuf:(id)sender
 {
     //[textView setSelectedRange:NSMakeRange(textLength, 0)];
-    int textLength;
+    NSUInteger textLength;
     textLength = [[textView string] length];
     [textView setSelectedRange:NSMakeRange(textLength, 0)]; 
     [textView insertText: @"\n"];
@@ -269,7 +269,7 @@
     // New values are in arrayOfFactors in the currentValue field.  Pass the array into the person object.
     NSMutableString *previous, *current;
     int i = 0;
-    int textLength;
+    NSUInteger textLength;
     id anObject;
     
     textLength = [[textView string] length];			// reset insertion in case I print in later
@@ -368,7 +368,7 @@
 
 // Data source methods needed for factor table
 
--(int)	numberOfRowsInTableView:(NSTableView *)aTableView
+-(NSUInteger)	numberOfRowsInTableView:(NSTableView *)aTableView
 {
     return [arrayOfFactors count];
 }

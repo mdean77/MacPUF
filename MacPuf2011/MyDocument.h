@@ -97,7 +97,7 @@
 -(void)	createFactorArray;				// Brute force to create array of factors
 
 // Data source methods needed for factor table
--(int)	numberOfRowsInTableView:(NSTableView *)aTableView;
+-(NSUInteger)	numberOfRowsInTableView:(NSTableView *)aTableView;
 -(id)	tableView:(NSTableView *)aTableView
 objectValueForTableColumn:(NSTableColumn *)aTableColumn
 			row:(int)rowIndex;

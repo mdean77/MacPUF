@@ -52,7 +52,8 @@ float abs_r(float f);		// abs function for floats
 
 // setPh:bicarbonate:pCO2 replaces the MacPuf function PHFNC and calculates pH from
 // Henderson-Hasselbach.  This is done in all metabolizing compartments of MacPuf.
--(void)setPh:(float)bicarbonate CO2:(float)CO2;
+-(void)updatePh:(float)bicarbonate CO2:(float)CO2;
+-(void)updatePh;
 
 -(float)dampChange:(float)newValue oldValue:(float)oldValue dampConstant:(float)dampConstant;
 

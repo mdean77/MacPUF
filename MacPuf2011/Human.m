@@ -138,10 +138,10 @@
 {
 // This is designed to print out information at the end of each run.  This implements routines that are contained
 // in the DEADY procedure of MacPuf.  
-    NSMutableString *result;
+    NSString *result;
     float x;
     x = 10*pow(2,(8 - [myArteries pH])*3.33);
-    result = [[NSMutableString alloc] initWithFormat:@"Final values for this run were...\n\nArterial pO2 = %6.1f            O2 Cont =%6.1f      O2 Sat = %5.1f%%\nArterial pCO2 = %5.1f            CO2 Cont =%6.1f \nArterial pH = %7.2f (%3.0f nm)   Arterial bicarbonate = %5.1f\n\nRespiratory rate = %5.1f         Tidal vol.= %6.0f ml\nTotal ventilation =%5.1f l/min   Actual cardiac output = %5.1f l/min\nTotal dead space = %4.0f ml       Actual venous admixture = %3.1f%%\n\n",
+    result = [[NSString alloc] initWithFormat:@"Final values for this run were...\n\nArterial pO2 = %6.1f            O2 Cont =%6.1f      O2 Sat = %5.1f%%\nArterial pCO2 = %5.1f            CO2 Cont =%6.1f \nArterial pH = %7.2f (%3.0f nm)   Arterial bicarbonate = %5.1f\n\nRespiratory rate = %5.1f         Tidal vol.= %6.0f ml\nTotal ventilation =%5.1f l/min   Actual cardiac output = %5.1f l/min\nTotal dead space = %4.0f ml       Actual venous admixture = %3.1f%%\n\n",
     [myArteries pO2],[myArteries oxygenContent],[myArteries oxygenSaturation]*100,
     [myArteries pCO2],[myArteries carbonDioxideContent],[myArteries pH],
     x,[myArteries bicarbonateContent],
@@ -156,7 +156,7 @@
     NSString *result;
     result = [[NSString alloc] initWithFormat:@"\n     List of first six parameters:\n     Inspired O2 %%:%6.2f\n     Inspired CO2 %%:%6.2f\n     Cardiac performance %%:%6.2f\n     Metabolic rate %%:%6.2f\n     Right to left:%6.2f\n     Extra dead space:%6.2f\n",
     [myLungs FiO2],[myLungs FiCO2],[myHeart cardiacFunction],metabolicRate, [myHeart rightToLeftShunt],[myLungs addedDeadSpace]];
-    NSLog(result);
+    NSLog(@"%@",result);
     return result;
 }
     
@@ -505,7 +505,7 @@
     }
 
 // And set the pH based on the adjusted bicarbonate:
-    [myArteries setPH];
+    [myArteries updatePh];
     
 // Estimate arterial pCO2 change for later effects on brain chemoceptors
     [myBrain setC2CHN:[myArteries pCO2]];
@@ -660,7 +660,7 @@
     
 // Compute the partial pressures
     [myTissues setSlowN2: [myTissues amountSlowNitrogen]*c26];
-    [myTissues setpN2: [myTissues amountOfNitrogen]*c28];
+    [myTissues setPN2: [myTissues amountOfNitrogen]*c28];
 
 // Tissue CO2 exchanges.  U is still the metabolism factor calculated earlier
 // 0.001 converts from cc to litres
@@ -706,7 +706,7 @@
 
    [myTissues setBicarbonateContent:[myTissues bicarbonateAmount]*c13+([myTissues pCO2]-40)*c3 - [myTissues TC3AJ]];
    if (([myTissues bicarbonateContent] * [myTissues pCO2]) <= 0) NSLog(@"We have a bad fucking arithmetic problem in tissue bicarb!");
-   [myTissues setPH];
+   [myTissues updatePh];
    [myTissues calcContents:temperature:Hct:Hgb:DPG];
 
 // Amounts of gases in venous pool increase by arriving blood from tissues and decrement by blood going to lungs.
@@ -788,7 +788,7 @@
    // and this is usually right, but if I need to pass other parameters I have to fool it, as shown here:
    // The call in Macpuf is to PHFNC(VC3CT, XC2PR) instead of (VC3CT, VC2PR)
 
-   [myVeins setPh:[myVeins bicarbonateContent]
+   [myVeins updatePh:[myVeins bicarbonateContent]
               CO2:XC2PR];
    
 // Next section concerns gas exchange in lungs.  PC is fraction of cardiac output perfectly mixed with
@@ -923,7 +923,7 @@
    // NOTE:  I am skipping some detailed arithmetic traps for now but anticipate having to go back!
 
 
-   [myLungs setPh:x
+   [myLungs updatePh:x
               CO2:[myLungs pCO2]];
    [myLungs calcContents:temperature:Hct:Hgb:DPG];
    

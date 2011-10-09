@@ -13,6 +13,20 @@
 
 @implementation Tissue
 
+@synthesize  oxygenConsumption;
+@synthesize  respiratoryQuotient;
+@synthesize  extraFluidVolume;
+@synthesize  pN2;
+@synthesize  amountOfNitrogen;
+@synthesize  slowN2;
+@synthesize  amountSlowNitrogen;
+@synthesize  excessNitrogen;
+@synthesize  lactateAmount;
+@synthesize  bubbles;
+@synthesize  referenceCO2;
+@synthesize  TC3AJ;
+@synthesize bicarbonateAmount;
+
 -(id) init
 {
     NSLog(@"Creating %@", self);    
@@ -52,115 +66,4 @@
             bicarbonateContent];
 }
 
-// Accessors
--(float) oxygenConsumption
-{
-    return oxygenConsumption;
-}
-
--(float) respiratoryQuotient
-{
-    return respiratoryQuotient;
-}
-
--(float) extraFluidVolume
-{
-    return extraFluidVolume;
-}
-
--(float) pN2 {
-    return pN2;
-}
-
--(float) amountOfNitrogen {
-    return amountOfNitrogen;
-}
-
--(float) slowN2 {
-    return slowN2;
-}
-
--(float) amountSlowNitrogen {
-    return amountSlowNitrogen;
-}
-
--(float) excessNitrogen {
-    return excessNitrogen;
-}
-
--(float) lactateAmount {
-    return lactateAmount;
-}
-
--(float) bubbles {
-    return bubbles;
-}
-
--(float) referenceCO2 {
-    return referenceCO2;
-}
-
--(float) TC3AJ {
-    return TC3AJ;
-}
-- (float)bicarbonateAmount
-{
-    return bicarbonateAmount;
-}
-
--(void) setOxygenConsumption:(float)value
-{
-    oxygenConsumption = value;
-}
-
--(void) setRespiratoryQuotient:(float)value
-{
-    respiratoryQuotient = value;
-}
-
--(void) setExtraFluidVolume:(float)value
-{
-    extraFluidVolume = value;
-}
-
--(void) setpN2:(float)value {
-    pN2 = value;
-}
-
--(void) setAmountOfNitrogen:(float)value {
-    amountOfNitrogen = value;
-}
-
--(void) setSlowN2:(float)value {
-    slowN2 = value;
-}
-
--(void) setAmountSlowNitrogen:(float)value {
-    amountSlowNitrogen = value;
-}
-
--(void) setExcessNitrogen:(float)value {
-    excessNitrogen = value;
-}
-
--(void) setLactateAmount:(float)value {
-    lactateAmount = value;
-}
-
--(void) setBubbles:(float)value {
-    bubbles = value;
-}
-
--(void) setReferenceCO2:(float)value {
-    referenceCO2 = value;
-}
-
--(void) setTC3AJ:(float)value {
-    TC3AJ = value;
-}
-
-    - (void)setBicarbonateAmount:(float)newAmountBicarbonate
-{
-    bicarbonateAmount = newAmountBicarbonate;
-}
 @end

@@ -41,17 +41,12 @@ float abs_r(float f) {
         return (newValue * dampConstant + oldValue)/(dampConstant + 1);
     }
     
--(void)setPh    
+-(void)updatePh    
     {
         pH = (6.1 + log10((bicarbonateContent)/(pCO2 * .03)));
     }
 
-// THIS IS REDUNDANT BUT CAN CLEAN UP LATER
--(void) setPH {
-				pH = (6.1 + log10((bicarbonateContent)/(pCO2 * .03)));
-}
-
--(void)setPh:(float)bicarbonate CO2:(float)CO2
+-(void)updatePh:(float)bicarbonate CO2:(float)CO2
 {
     pH = (6.1 + log10((bicarbonate)/(CO2 * .03)));
 }
